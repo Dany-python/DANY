@@ -630,8 +630,8 @@ def home():
 {BPurple}5- Remove List [ حذف لسته الانستا ] </>
 <<<{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}TOOLS DANY TIKTOK{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
 {X}6- Get Search TikTok List [ سحب لسته من البحث ]</>
+{X}8- Get Following TikTOK List User [1] [  من يوزر واحد المتابعهم ] </>
 {X}7- Get Following TikTOK List User [ اكثر من يوزر المتابعهم ] </>
-{X}8- Get Following TikTOK List User [  من يوزر واحد المتابعهم ] </>
 {X}9- Check List TikTok [ فحص لسته تيك توك ] </>
 {X}10- Remove List TikTok [ حذف لسته تيك توك ] </>
 <<<{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}TOOLS DANY TikTok{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
