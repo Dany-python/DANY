@@ -123,7 +123,6 @@ good2 =0
 bad2=0
 
 def get_serch():
-    print(f'{ip_address}')
     sid = input(f'{BL}[+] Enter Your Session => ')
     while True:
         num = int("".join(random.choice('456789')for i in range(1)))
