@@ -15,9 +15,11 @@ try:
     import sys
     from oreoTO import InfoTik
     import socket
+    from threading import threads   
+    import threading
 except:
     print('<<=Download library=>>')
-    os.system('pip install rquests')
+    os.system('pip install requests')
     os.system('pip install uuid')
     os.system('pip install user_agent')
     os.system('pip install json')
@@ -40,7 +42,7 @@ t=(mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
 hours = (now.hour)
 x = datetime.datetime.now()
 time1 = datetime.datetime.now()
-g= datetime.datetime(2023, 9, 15, 0, 00 ,0)
+g= datetime.datetime(2023, 9, 13, 0, 00 ,0)
 
 if (x.strftime("%x"))>(g.strftime("%x")):
  print('\n\n')
@@ -121,8 +123,20 @@ gooda=0
 bada =0
 good2 =0
 bad2=0
-
+anim = [     "\x1b[1;97m[\x1b[1;91m■\x1b[0m□□□□□□□□□]  ",     "\x1b[1;97m[\x1b[1;92m■■\x1b[0m□□□□□□□□]  ",     "\x1b[1;97m[\x1b[1;93m■■■\x1b[0m□□□□□□□]  ",     "\x1b[1;97m[\x1b[1;95m■■■■\x1b[0m□□□□□□]  ",     "\x1b[1;97m[\x1b[1;94m■■■■■\x1b[0m□□□□□]  ",     "\x1b[1;97m[\x1b[38;5;26m■■■■■■\x1b[0m□□□□]  ",     "\x1b[1;97m[\x1b[1;96m■■■■■■■\x1b[0m□□□]  ",     "\x1b[1;97m[\x1b[38;5;86m■■■■■■■■\x1b[0m□]  ",     "\x1b[1;97m[\x1b[38;5;96m■■■■■■■■■\x1b[0m]  ",     "\x1b[1;97m[\x1b[38;5;203m■■■■■■■■■■\x1b[0m]  " ] 
+am = ('\x1b[38;5;51mH','\x1b[38;5;63mE','\x1b[38;5;73mR','\x1b[38;5;83mO','\x1b[38;5;93mE','\x1b[38;5;103mS') 
+for i in range(50):
+	time.sleep(.1)     
+	sys.stdout.write("\rDANY VIP... " + anim[i % len(anim)])
 def get_serch():
+    print(f'''
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+|{C}</> Enter Here SessionID  
+|{X}</> Account Program => @X_6_Z
+|{B}</> Channl Program => @H_9_D
+|{Z}</> IP PHONE => {ip_address} 
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+    ''')
     sid = input(f'{BL}[+] Enter Your Session => ')
     while True:
         num = int("".join(random.choice('456789')for i in range(1)))
@@ -170,6 +184,14 @@ def get_serch():
             ''
 def Check():
     global w,t,e,r
+    print(f'''
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+|{C}</> Enter Here Token And ID Please
+|{X}</> Account Program => @X_6_Z
+|{B}</> Channl Program => @H_9_D
+|{Z}</> IP PHONE => {ip_address} 
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+    ''')
     id=input(f"{F} id ➯ {C}")
     token=input(f"{F} token ➯ {C}")
     requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text=مرحباً بك في اداة DANY المجانيه </>✅\nجار بدأ الصيد يرجى الانتظار </>⚜️')
@@ -299,12 +321,14 @@ def Check():
 ⋘─────━𓆩DANY𓆪‏━─────⋙ 
 ✯ - ᗷY : @X_6_Z , @H_9_D""")
                 print(f'- Hit [{e}] Done Send Info Hit In Your Tele Bot.')
-                requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text={f1}')
-                requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text={email}')
+                if dat<=2018:
+                    requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text={f1}')
+                    requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text={email}')
 
             else:
                 r+=1
                 os.system('cls' if os.name == 'nt' else 'clear')
+                print(f'DoneIG')
                 print(f'''
 {X}|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}
 {Z}|{F}[+] GOOD USER <=> {w}
@@ -332,6 +356,14 @@ def Check():
 {X}|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}
 ''')
 def Get_session():
+    print(f'''
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+|{C}</> Enter Here USERNAME AND PASSWORD Please
+|{X}</> Account Program => @X_6_Z
+|{B}</> Channl Program => @H_9_D
+|{Z}</> IP PHONE => {ip_address} 
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+    ''')
     user = input(f"{C}[+] Enter your username => ")
     passe = input(f"{B}[+] Enter your password => ")
     print('\n')
@@ -382,7 +414,14 @@ def Get_session():
         print(f'{Z}</>Bad Login <=> {user}:{passe}')
         print('\n')
 def rest_insta():
-    print('\n')
+    print(f'''
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+|{C}</> Enter Here USERNAME SEND REST INSTAGRAM
+|{X}</> Account Program => @X_6_Z
+|{B}</> Channl Program => @H_9_D
+|{Z}</> IP PHONE => {ip_address} 
+|{X}{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}×{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
+    ''')
     w = input(f'{YU}[+] Username => ')
     print('\n')
     url=f'https://i.instagram.com/api/v1/users/web_profile_info/?username={w}'
@@ -630,8 +669,8 @@ def home():
 {BPurple}5- Remove List [ حذف لسته الانستا ] </>
 <<<{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}TOOLS DANY TIKTOK{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
 {X}6- Get Search TikTok List [ سحب لسته من البحث ]</>
-{X}7- Get Following TikTOK List User [1] [  من يوزر واحد المتابعهم ] </>
-{X}8- Get Following TikTOK List User [ اكثر من يوزر المتابعهم ] </>
+{X}8- Get Following TikTOK List User [1] [  من يوزر واحد المتابعهم ] </>
+{X}7- Get Following TikTOK List User [ اكثر من يوزر المتابعهم ] </>
 {X}9- Check List TikTok [ فحص لسته تيك توك ] </>
 {X}10- Remove List TikTok [ حذف لسته تيك توك ] </>
 <<<{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{Z}—{X}—{F}—{C}—{B}—{Y}—{E}—{F}TOOLS DANY TikTok{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}{G}—{S}—{Z}—{X}—{F}—{C}—{B}—{F}>>>
