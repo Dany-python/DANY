@@ -42,7 +42,7 @@ t=(mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss)
 hours = (now.hour)
 x = datetime.datetime.now()
 time1 = datetime.datetime.now()
-g= datetime.datetime(2023, 9, 13, 0, 00 ,0)
+g= datetime.datetime(2023, 9, 15, 0, 00 ,0)
 
 if (x.strftime("%x"))>(g.strftime("%x")):
  print('\n\n')
